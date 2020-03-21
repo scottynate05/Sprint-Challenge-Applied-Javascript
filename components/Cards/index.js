@@ -83,11 +83,3 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
         entryP.appendChild(cardD)
     })
 })
-
-axios.get('https://lambda-times-backend.herokuapp.com/articles')
-    .then(respons => {
-    respons.data.articles.node.forEach(e => {
-        const cardE = article(e)
-        entryP.appendChild(cardE)
-    })
-})
